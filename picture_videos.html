@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insertar Imagenes y Videos Responsive</title>
+<style>
+@-webkit-keyframes mymove {
+    from {left: 0px;}
+    to {left: 800px;}
+}
+
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 1080px;}
+}
+
+p {
+	font-family: 'Roboto';
+	font-size:20px;
+}
+h1 {
+    color: red;
+    font-family: arial;
+    font-size: 300%;
+	position: relative;
+	text-align:center;
+    /*-webkit-animation: mymove 8s infinite;
+    -webkit-animation-delay: 2s;
+    animation: mymove 10s infinite;
+    animation-delay: 3s;*/
+}
+
+body {
+    color: black;
+    background-color: #FFFFFF;
+	font-size:20px;
+	margin-bottom:40px;
+	margin-left:40px;
+	margin-right:800px;
+	margin-top:10px;
+	}
+	
+img,
+source,
+div#caja {
+	width: 80vw;
+}
+
+video-responsive {
+position: relative;
+padding-bottom: 56.25%; 
+padding-top: 30px; 
+height: 0;
+overflow: hidden;
+}
+ 
+video-responsive iframe,
+video-responsive object,
+video-responsive embed {
+position: absolute;
+top: 0;
+left: 10;
+width: 100%;
+height: 100%;
+}	
+</style>   
+
+</head>
+<body>
+<div id="caja">
+ <header class="Republica Dominicana">
+<h1>República Dominicana</h1>
+    <div>
+
+<picture>    
+    <source srcset="video-svg/Dominican_Republic_location_map.svg" alt="Ubicación de la República Dominicana" media="(min-width: 800px)">
+    <source srcset="video-svg/escudo.svg" alt="Símbolo Patrio de la República Dominicana" media="(min-width: 400px)">
+    <source srcset="video-svg/Pedernales.svg" alt="Pedernales" media="(min-width: 320px)">
+    <img srcset="video-svg/bandera.svg" alt="Bandera de la República Dominicana" media="(min-width: 100px)">
+</picture>
+
+</div>
+
+<div class="”video-responsive”">
+<iframe width="600" height="480" src="https://www.youtube.com/embed/s7TsTGGTK2k" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+
+</div>
+</body>
+
+</header>   
+</div>
+</body>
+</html>
